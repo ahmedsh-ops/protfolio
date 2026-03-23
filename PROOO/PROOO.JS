@@ -1,4 +1,4 @@
-const dot = document.getElementById("custom-cursor");
+const dot = document.getElementById("dot");
 
 window.addEventListener("mousemove", function (event) {
     const x = event.clientX;
@@ -6,8 +6,8 @@ window.addEventListener("mousemove", function (event) {
     dot.style.transform = `translate(${x - 6}px, ${y - 6}px)`;
 });
 
-loding = document.getElementById('preloader');
-home = document.getElementById('main-content');
+loding = document.getElementById('loding');
+home = document.getElementById('web');
 
 setTimeout(function zoom() {
     loding.style.height = '0vh';
@@ -15,7 +15,7 @@ setTimeout(function zoom() {
     home.style.display = 'block';
 }, 2000);
 
-let nav = document.getElementById('main-nav');
+let nav = document.getElementById('nav');
 setInterval(function ggg() {
     nav.style.transform = `translateY(0%)`
     nav.style.animationDelay = '0.3s'
@@ -48,7 +48,7 @@ window.addEventListener("scroll", () => {
 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
-const navItems = document.querySelectorAll("#main-nav-menu a");
+const navItems = document.querySelectorAll("#nav-links a");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -78,7 +78,7 @@ if (contactForm) {
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
-                name: this.project-title.value,
+                name: this.name.value,
                 email: this.email.value,
                 message: this.message.value,
                 _subject: "New Message from Portfolio"
