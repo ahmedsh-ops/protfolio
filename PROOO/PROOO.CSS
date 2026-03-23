@@ -926,7 +926,7 @@ header div .contant {
 }
 
 /* --- Responsive Media Queries --- */
-@media (max-width: 900px) {
+@media (max-width: 900px)  {
     .web nav {
         padding: 0 20px;
     }
