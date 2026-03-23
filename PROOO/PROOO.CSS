@@ -925,8 +925,7 @@ header div .contant {
     border-radius: 5px;
 }
 
-/* --- Responsive Media Queries --- */
-@media (max-width: 900px)  {
+@media (max-width: 1000px)  {
     .web nav {
         padding: 0 20px;
     }
