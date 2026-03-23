@@ -42,7 +42,7 @@ body {
 }
 
 .loding span {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 900;
     color: #000000;
     overflow: hidden;
@@ -150,7 +150,7 @@ body {
 }
 
 .web nav h1 {
-    font-size: 1.8rem;
+    font-size: 4rem;
     letter-spacing: 0rem;
     font-weight: 800;
     color: #0b0b0b;
@@ -244,13 +244,13 @@ header div .ff {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: 4rem;
     z-index: 1;
     font-weight: normal;
 }
 
 header div .contant {
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-weight: 700;
     width: 30%;
     bottom: 0;
@@ -318,7 +318,7 @@ header div .contant {
     width: 20%;
     margin: 20px;
     right: 20px;
-    font-size: 2.5rem;
+    font-size: 10rem;
     font-weight: 700;
 }
 
@@ -925,7 +925,8 @@ header div .contant {
     border-radius: 5px;
 }
 
-@media (max-width: 1000px)  {
+/* --- Responsive Media Queries --- */
+@media (max-width: 1500px) {
     .web nav {
         padding: 0 20px;
     }
@@ -964,7 +965,7 @@ header div .contant {
     }
 
     .web nav ul li a {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
 
     .hamburger.active span:nth-child(1) {
@@ -980,12 +981,12 @@ header div .contant {
     }
 
     header div h1 {
-        font-size: 18vw;
+        font-size: 17vw;
     }
 
     header div .contant {
         width: 95%;
-        font-size: 1rem;
+        font-size: 4rem;
         padding: 0 15px;
         margin-bottom: 30px;
     }
@@ -995,22 +996,24 @@ header div .contant {
         margin: 15px;
         right: 0;
         left: 10px;
-        font-size: 1.5rem;
+        font-size: 6rem;
         align-items: flex-start;
     }
 
     .ABOUT .about2 {
         width: 95%;
+
     }
 
     .ABOUT .about2 .about-p {
-        font-size: 32px;
+        font-size: 100px;
         flex-direction: column;
         text-align: left;
     }
 
     .ABOUT .about2 .about-h2 {
         transform: translateY(80px);
+        font-size: 2rem;
     }
 
     .PROJECT .project-h2 h2 {
