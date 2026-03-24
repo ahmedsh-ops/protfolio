@@ -956,7 +956,7 @@ header div .contant {
     }
 
     .FOOTER .top-footer h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .FOOTER .top-footer a.email {
@@ -1004,8 +1004,7 @@ header div .contant {
     }
 
     .logofooter {
-        font-size: 30vw;
-        letter-spacing: 1rem;
+        font-size: 2vw;
     }
 }
 
@@ -1021,8 +1020,6 @@ header div .contant {
     line-height: 1;
     transform: scaleY(1);
     margin: 0;
-    -webkit-transform-origin: center;
-    transform-origin: center;
 }
 
 /* --- Skills Marquee --- */
