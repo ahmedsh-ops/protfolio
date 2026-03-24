@@ -42,7 +42,7 @@ body {
 }
 
 .loding span {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: #000000;
     overflow: hidden;
@@ -150,7 +150,7 @@ body {
 }
 
 .web nav h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: 0rem;
     font-weight: 800;
     color: #0b0b0b;
@@ -244,13 +244,13 @@ header div .ff {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    font-size: 4rem;
+    font-size: 2rem;
     z-index: 1;
     font-weight: normal;
 }
 
 header div .contant {
-    font-size: 5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     width: 30%;
     bottom: 0;
@@ -266,7 +266,45 @@ header div .contant {
     filter: blur(10px);
 }
 
+.spanss {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 20%;
+    margin: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
+
+.spanss .ss1 {
+    color: #8F8F8F;
+    animation: slideUp2 2s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.spanss .ss2 {
+    color: #CACACA;
+    animation-delay: 1s;
+    animation: slideUp2 2s ease forwards;
+
+}
+
+@keyframes slideUp2 {
+    from {
+        transform: translateY(100%);
+        filter: blur(10px);
+    }
+
+    to {
+        transform: translateY(0);
+        filter: blur(0) brightness(100%);
+    }
+}
 
 .ABOUT {
     position: relative;
@@ -308,45 +346,7 @@ header div .contant {
     font-weight: 700;
 }
 
-.spanss {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    width: 20%;
-    margin: 20px;
-    right: 20px;
-    font-size: 10rem;
-    font-weight: 700;
-}
 
-
-.spanss .ss1 {
-    color: #8F8F8F;
-    animation: slideUp2 2s ease forwards;
-    animation-delay: 0.3s;
-}
-
-.spanss .ss2 {
-    color: #CACACA;
-    animation-delay: 1s;
-    animation: slideUp2 2s ease forwards;
-
-}
-
-@keyframes slideUp2 {
-    from {
-        transform: translateY(100%);
-        filter: blur(10px);
-    }
-
-    to {
-        transform: translateY(0);
-        filter: blur(0) brightness(100%);
-    }
-}
 
 .autoblur {
     animation: autoblur;
@@ -926,10 +926,20 @@ header div .contant {
 }
 
 /* --- Responsive Media Queries --- */
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
+    #dot {
+        display: none;
+    }
+    .loding span {
+    font-size: 6rem;}
     .web nav {
         padding: 0 20px;
     }
+
+    .web nav h1{
+        font-size: 4rem;
+    }
+
 
     .logo {
         width: auto;
@@ -941,6 +951,7 @@ header div .contant {
 
     .hamburger {
         display: flex;
+        
         /* Show Hamburger */
     }
 
@@ -1018,8 +1029,8 @@ header div .contant {
 
     .PROJECT .project-h2 h2 {
         flex-direction: column;
-        gap: 10px;
-        font-size: 70px;
+        gap: 5px;
+        font-size: 100px;
         text-align: center;
     }
 
@@ -1030,14 +1041,14 @@ header div .contant {
 
     .PROJECT .project1 {
         flex-direction: column-reverse;
-        height: auto;
+        height:100%;
         padding: 60px 20px;
         gap: 40px;
     }
 
     .PROJECT .project1 .img {
         width: 100%;
-        height: 350px;
+        height: 500px;
     }
 
     .PROJECT .project1 img {
@@ -1058,7 +1069,7 @@ header div .contant {
     }
 
     .kalamis .num p {
-        font-size: 100px;
+        font-size: 150px;
     }
 
     .kalamwa .name {
@@ -1066,12 +1077,13 @@ header div .contant {
     }
 
     .kalamwa .was {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         width: 100%;
     }
 
     .kalamwa .btn {
         width: 100%;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -1097,7 +1109,7 @@ header div .contant {
     }
 
     .REVIEWS .reviews .reviews1 .Company p {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     .REVIEWS .reviews .reviews2 {
@@ -1106,50 +1118,108 @@ header div .contant {
     }
 
     .FAQ {
-        padding: 60px 20px;
+        padding: 60px 30px;
     }
 
     .faq-section h2 {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     .faq-list details summary {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
 
     .faq-list details summary::after {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .faq-list details .content{
+        font-size: 2rem;
     }
 
     .CONNECT {
         padding: 60px 20px;
-        border-radius: 30px 30px 0 0;
     }
 
     .connect-section h2 {
-        font-size: 2.5rem;
+        font-size: 6rem;
+    }
+
+    .connect-section p {
+        font-size: 2rem;
+    }
+
+    .connect-form input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .connect-form textarea::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .connect-form button{
+        font-size: 2rem;
     }
 
     .FOOTER {
         padding: 60px 20px 20px;
-        gap: 40px;
+        
+    }
+
+    .FOOTER .top-footer{
+        margin-top: 150px ;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FOOTER .top-footer .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .FOOTER .top-footer h2 {
-        font-size: 3rem;
+        font-size: 12rem;
     }
 
     .FOOTER .top-footer a.email {
-        font-size: 1.5rem;
+        font-size: 6rem;
     }
 
     .FOOTER .grid-footer {
         grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 100px;
         gap: 40px;
     }
 
+    .FOOTER .grid-footer .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FOOTER .grid-footer .col .title{
+        font-size: 7rem;
+    }
+
+    .FOOTER .grid-footer .col a{
+        font-size: 3rem;
+    }
+
+    .FOOTER .grid-footer .col .a{
+        font-size: 3rem;
+    }
+
     .FOOTER .bottom-footer {
-        font-size: 0.7rem;
+        font-size: 1rem;
         align-items: flex-start;
     }
 
@@ -1157,6 +1227,11 @@ header div .contant {
         flex-direction: column;
         gap: 15px;
         top: 0;
+    }
+
+    .logofooter {
+        font-size: 60vw;
+        letter-spacing: 1rem;
     }
 }
 
@@ -1172,5 +1247,6 @@ header div .contant {
     line-height: 1;
     transform: scaleY(1);
     margin: 0;
+    letter-spacing: 2rem; -webkit-transform-origin: center;
     transform-origin: center;
 }
