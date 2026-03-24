@@ -946,6 +946,7 @@ header div .contant {
 
     .logo {
         width: auto;
+
     }
 
     .clock {
@@ -996,7 +997,6 @@ header div .contant {
 
     header div h1 {
         font-size: 17vw;
-        transform: rotateY(50px);
     }
 
     header div .contant {
