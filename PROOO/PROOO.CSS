@@ -764,6 +764,9 @@ header div .contant {
 
     .web nav {
         padding: 0 20px;
+        background: #00000000;
+        filter: invert(0%);
+        mix-blend-mode: normal;
     }
 
     .web nav h1 {
