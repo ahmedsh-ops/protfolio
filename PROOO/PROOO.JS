@@ -20,24 +20,15 @@ setInterval(function ggg() {
     nav.style.transform = `translateY(0%)`
     nav.style.animationDelay = '0.3s'
 }, 20)
-function updateClock() {
-    const now = new Date();
+function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        time.textContent = `${hours} : ${minutes}`;
+    }
 
-    // ساعات ودقايق
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-
-    // تزبيط لو أقل من 10
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-
-    document.getElementById("time").textContent = `${hours}:${minutes}`;
-}
-
-// أول تشغيل
-updateClock();
-// تحديث كل دقيقة
-setInterval(updateClock, 1000 * 60);
+    setInterval(updateTime, 1000);
+    updateTime();
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const navItems = document.querySelectorAll("#nav-links a");
